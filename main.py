@@ -53,6 +53,7 @@ def calculate_bmi(weight, height):
 if __name__ == '__main__':
     generate_random_character()
     total_two_numbers()
-    weight = int(input("Enter your Weight in Kg: "))
-    height = float(input("Enter your Height in Meters: "))
-    calculate_bmi(weight, height)
+
+    weights = int(input("Enter your Weight in Kg: "))
+    heights = float(input("Enter your Height in Meters: "))
+    calculate_bmi(weights, heights)
