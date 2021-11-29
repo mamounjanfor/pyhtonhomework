@@ -36,7 +36,23 @@ def total_two_numbers():
         print("Wrong answer")
 
 
+def calculate_bmi(weight, height):
+
+    bmi = weight/(height*height)
+    if bmi < 18.5:
+        print("Underweight")
+    elif 18.5 <= bmi < 25.0:
+        print("Normal")
+    elif 25.0 <= bmi < 30.0:
+        print("Overweight")
+    else:
+        print("Obese")
+
+
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     generate_random_character()
     total_two_numbers()
+    weight = int(input("Enter your Weight in Kg: "))
+    height = float(input("Enter your Height in Meters: "))
+    calculate_bmi(weight, height)
