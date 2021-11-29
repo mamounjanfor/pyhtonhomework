@@ -1,16 +1,42 @@
-# This is a sample Python script.
+import random
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+"""
+Now let us consider how to generate a random lowercase letter. The ASCII
+code for lowercase letters are consecutive integers starting from the ASCII
+code for 'a', then for 'b', 'c', ..., and 'z'. The ASCII code for 'a' is
+ord('a')
+
+❑ So, a random integer between ord('a') and ord('z') is
+
+random.randint(ord('a'), ord('z'))
+❑ And, a random lowercase letter is
+
+chr(random.randint(ord('a'), ord('z')))
+
+❑ To generalize the foregoing discussion, a random character between any two
+characters ch1 and ch2 with ch1 < ch2 can be generated as follows:
+chr(random.randint(ord(ch1), ord(ch2)))
+"""
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def generate_random_character():
+    return print(chr(random.randint(ord("a"), ord("z"))))
+
+
+def total_two_numbers():
+    a = random.randint(0, 10)
+    b = random.randint(0, 10)
+    print(a)
+    print(b)
+    c = a + b
+    answer = int(input("Enter the total of the two numbers: "))
+    if c == answer:
+        print("You are right!")
+    else:
+        print("Wrong answer")
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    generate_random_character()
+    total_two_numbers()
