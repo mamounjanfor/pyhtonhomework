@@ -38,7 +38,7 @@ def total_two_numbers():
 
 def calculate_bmi(weight, height):
 
-    bmi = weight/(height*height)
+    bmi = weight/(height**2)
     if bmi < 18.5:
         print("Underweight")
     elif 18.5 <= bmi < 25.0:
@@ -51,6 +51,7 @@ def calculate_bmi(weight, height):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
+
     generate_random_character()
     total_two_numbers()
 
