@@ -10,4 +10,18 @@ for a question on addition of two single digit integers.
 def cal_two():
     a = random.randint(0, 10)
     b = random.randint(0, 10)
-    int(input("Enter you answer: "))
+    print(a)
+    print(b)
+    c = a + b
+
+    while True:
+        d = int(input("Enter you answer: "))
+        if c == d:
+            print("Correct")
+            break
+        else:
+            print("Try again")
+
+
+
+cal_two()
